@@ -53,6 +53,7 @@ int main()
             cout << "Sala 2." << endl;
             cout << "LV: " << lv << endl;
             cout << "----------------------------------------------------------------------------"<<endl;
+
             if (monstro1 == true)
             {
                 cout << "Um slime (LV 2) bloqueia o caminho." << endl;
@@ -108,7 +109,7 @@ int main()
         {
             cout << "sala 3 lv:" << lv << endl;
 
-            cout << "voce pode retornar ou rotacionar as portas do labirinto no sentido horario quantas vezes gostaria de rotacionar? (no maximo 4)" << endl;
+            cout << "Você pode retornar ou rotacionar as portas do labirinto no sentido horario quantas vezes gostaria de rotacionar? (digite r para rotacionar)" << endl;
             cout << "----------------------------------------------------------------------------"<<endl;
 
             cin >> direcao;
@@ -135,6 +136,67 @@ int main()
         if (sala == 4)
         {
             cout << "Sala 4." << endl;
+            cout << "LV: " << lv << endl;
+            cout << "----------------------------------------------------------------------------"<<endl;
+            
+            cout << "Opcoes: frente, tras, esquerda ou direita." << endl;
+            cin >> direcao;
+                if (direcao == 'w')
+                {
+                    direcao='n';
+                    sala = 10;
+                }
+
+                else if (direcao == 'a')
+                {
+                  if (rotacao == 4)
+                  {
+                    direcao = 'n';
+                    sala = 6;
+                  } else {
+                    direcao = 'n';
+                    cout << "sua rotação não permite. rotação necessária: 6";
+                  }
+                }
+
+                else if (direcao == 's')
+                {
+                    direcao='n';
+                    sala = 2;
+                }
+
+                else if (direcao == 'd')
+                {
+
+                  if (rotacao == 1)
+                  {
+                    direcao = 'n';
+                    sala = 5;
+                  } else {
+                    direcao = 'n';
+                    cout << "sua rotação não permite. rotação necessária: 1";
+                  }
+
+
+                }
+
+            if (sala == 5) {
+              std::cout << "sala 5";
+              return 0;
+            }
+
+            if (sala == 6) {
+              std::cout << "sala 6";
+              return 0;
+            }
+
+            if (sala == 10) {
+              std::cout << "sala 10";
+              return 0;
+            }
+
+
+
         }
     }
 
