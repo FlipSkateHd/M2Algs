@@ -16,10 +16,10 @@ Neste labirinto, implementamos duas features novas:
 
 ## Mapa do projeto
 **Lado da frente**
-![[frente.jpg]]
+<img src="\frente.jpg">
 
 **Lado de trás**
-![[tras.jpg]]
+<img src="\tras.jpg">
 
 **Parte da senha 1**
 Charada:
