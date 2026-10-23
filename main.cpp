@@ -100,6 +100,11 @@ int main()
                 {
                     direcao='n';
                     sala = 4;
+                } 
+                else if (direcao == 'a')
+                {
+                    direcao='n';
+                    sala = 3;
                 }
                 else if (direcao == 'd')
                 {
@@ -180,7 +185,6 @@ int main()
                     direcao='n';
                     sala = 10;
                 }
-
                 else if (direcao == 'a')
                 {
                   if (rotacao == 5)
@@ -192,58 +196,48 @@ int main()
                     cout << "sua rotação não permite. rotação necessária: 360";
                   }
                 }
-
                 else if (direcao == 's')
                 {
                     direcao='n';
                     sala = 2;
                 }
-
                 else if (direcao == 'd')
                 {
-
                   if (rotacao == 1)
                   {
                     direcao = 'n';
                     sala = 5;
                   } else {
                     direcao = 'n';
-                    cout << "sua rotação não permite. rotação necessária: 0°";
+                    cout << "sua rotação não permite. rotação necessária: 0° \n";
                   }
-
-
+                    
                 }
-
-            // SALA 5 (ESSA PARTE TA DANDO ERRO AO COLOCAR INPUT ERRADO )
-            if (sala == 5) {
+        }
+        
+                
+            // SALA 5
+        if (sala == 5) {
             cout << "Sala 5." << endl;
             cout << "LV: " << lv << endl;
             cout << "----------------------------------------------------------------------------"<<endl;
             cout << "Opcoes: Esquerda." << endl;
             cin >> direcao;
-
-            if (direcao == 'a')
-            {
+            if (direcao == 'a'){
                 direcao = 'n';
                 sala = 4;
-                
-            } else
-            {
-                direcao = 'n';
-                cout << "Direção inválida." << endl;
-            }
- 
-            }
+            } 
+        }
+            
             // SALA 6
             if (sala == 6) {
-            cout << "Sala 6." << endl;
-            cout << "LV: " << lv << endl;
-            cout << "----------------------------------------------------------------------------"<<endl;
-            cout << "Opcoes: Virar mapa, direita" << endl;
-            cin >> direcao;
-            if (direcao == 'q'){
-                 sala = 7;
-            
+                cout << "Sala 6." << endl;
+                cout << "LV: " << lv << endl;
+                cout << "----------------------------------------------------------------------------"<<endl;
+                cout << "Opcoes: Virar mapa, direita" << endl;
+                cin >> direcao;
+                if (direcao == 'q'){
+                    sala = 7;
                 } else if (direcao == 'd'){
                     sala = 4;
              
@@ -255,6 +249,7 @@ int main()
               std::cout << "sala 10";
               return 0;
             }
+            
             // SALA 10
             if (sala == 10) {
               std::cout << "sala 10";
@@ -263,7 +258,6 @@ int main()
 
 
 
-        }
     }
 
     cout << "Voce ganhou!!" << endl;
