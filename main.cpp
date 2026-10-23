@@ -33,7 +33,7 @@ int main()
             cout << "A sua esquerda tem uma porta." << endl;
             cout << "LV: " << lv << endl;
             cout << "----------------------------------------------------------------------------"<<endl;
-
+            cout << "Opcoes: esquerda (a)." << endl;
             cin >> direcao;
 
             if (direcao == 'a')
@@ -58,7 +58,7 @@ int main()
             {
                 cout << "Um slime (LV 2) bloqueia o caminho." << endl;
                 cout << "Enfrentar o slime? (seguir para esquerda)" << endl;
-                cout << "Opcoes: esquerda, cima ou direita." << endl;
+                cout << "Opcoes: esquerda (a), cima (w) ou direita (d)." << endl;
                 cout << "----------------------------------------------------------------------------"<<endl;
 
                 cin >> direcao;
@@ -94,7 +94,7 @@ int main()
             }
             else
             {
-                cout << "Opcoes: esquerda, cima ou direita." << endl;
+                cout << "Opcoes: esquerda (a), cima (w) ou direita (d)." << endl;
                 cin>>direcao;
                 if (direcao == 'w')
                 {
@@ -123,6 +123,8 @@ int main()
             cout << "LV: " << lv << endl;
             cout << "----------------------------------------------------------------------------"<<endl;
 
+            cout << "Opcoes: rotacionar (r) ou direita. (d)" << endl;
+            cout << "----------------------------------------------------------------------------"<<endl;
 
             cout << "Você pode retornar ou rotacionar as portas do labirinto no sentido horario quantas vezes gostaria de rotacionar? (digite r para rotacionar)" << endl;
             cout << "----------------------------------------------------------------------------"<<endl;
@@ -178,7 +180,7 @@ int main()
             cout << "LV: " << lv << endl;
             cout << "----------------------------------------------------------------------------"<<endl;
             
-            cout << "Opcoes: frente, tras, esquerda ou direita." << endl;
+            cout << "Opcoes: cima (w), baixo (s), esquerda (a) ou direita (d)." << endl;
             cin >> direcao;
                 if (direcao == 'w')
                 {
@@ -193,7 +195,9 @@ int main()
                     sala = 6;
                   } else {
                     direcao = 'n';
-                    cout << "sua rotação não permite. rotação necessária: 360";
+                    cout << "----------------------------------------------------------------------------"<<endl;
+                    cout << "sua rotação não permite. rotação necessária: 360 \n";
+                    cout << "----------------------------------------------------------------------------"<<endl;
                   }
                 }
                 else if (direcao == 's')
@@ -209,7 +213,9 @@ int main()
                     sala = 5;
                   } else {
                     direcao = 'n';
+                    cout << "----------------------------------------------------------------------------"<<endl;
                     cout << "sua rotação não permite. rotação necessária: 0° \n";
+                    cout << "----------------------------------------------------------------------------"<<endl;
                   }
                     
                 }
@@ -221,7 +227,7 @@ int main()
             cout << "Sala 5." << endl;
             cout << "LV: " << lv << endl;
             cout << "----------------------------------------------------------------------------"<<endl;
-            cout << "Opcoes: Esquerda." << endl;
+            cout << "Opcoes: esquerda (a)." << endl;
             cin >> direcao;
             if (direcao == 'a'){
                 direcao = 'n';
@@ -234,7 +240,7 @@ int main()
                 cout << "Sala 6." << endl;
                 cout << "LV: " << lv << endl;
                 cout << "----------------------------------------------------------------------------"<<endl;
-                cout << "Opcoes: Virar mapa, direita" << endl;
+                cout << "Opcoes: Virar mapa (q), direita (d)" << endl;
                 cin >> direcao;
                 if (direcao == 'q'){
                     sala = 7;
