@@ -16,7 +16,7 @@ Neste labirinto, implementamos duas features novas:
 
 ## Mapa do projeto
 **Lado da frente**
-<img src="\frente.jpg">
+<img src="\frente.png">
 
 **Lado de trás**
 <img src="\tras.jpg">
