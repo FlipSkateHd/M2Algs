@@ -36,5 +36,5 @@ Senha completa (porta 10):
 
 
 ## Autores: 
-Arthur Gabriel Faria 
-Felipe Nogueira Gomes 
+- Arthur Gabriel Faria 
+- Felipe Nogueira Gomes 
